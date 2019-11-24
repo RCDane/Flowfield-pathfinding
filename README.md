@@ -25,7 +25,7 @@ Quadtree example scene:
 For this project it was necessary for each particle to find the nearest flowfield point to get it's movement vector. here is the quadtree being visualized, while getting points added to it in a painting like manner.
 ![FlowField](https://github.com/RCDane/Flowfield-pathfinding/blob/master/Images/quadtree%20example.gif)
 
-Since the programs pathfinding system running time would scale by n*k using a brute force algorithm for flowfield lookup, where n the amount of particles and k is the size of the flowfield. Since the lookup in a quadtree scales logarithmically as the flowfield gets bigger, the algorithm can go from n*k to n*log(k)
+Since the programs pathfinding system running time would scale by n\*k using a brute force algorithm for flowfield lookup, where n the amount of particles and k is the size of the flowfield. Since the lookup in a quadtree scales logarithmically as the flowfield gets bigger, the algorithm can go from n\*k to n\*log(k)
 
 
 Tested in Unity 2018.4.12
