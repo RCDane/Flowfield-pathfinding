@@ -1,6 +1,6 @@
 # Flowfield pathfinding and dungeon generation
 What is this project? \
-An example project of a water shader
+A Flowfield pathfinding system implemented in unity.
 
 # Goal / Motivation
 This project was made as my programming c exam project during my time at Game College Grenaa, Which is a HTX(High school) education in denmark focused on enginering and game development.
