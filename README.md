@@ -14,7 +14,7 @@ The project started out as a dungeon generator focused on placing rooms and then
 - Flow Field Generation
 - Pathfinding using said Flow Field
 - Quadtree data structure for logarithmic look up in flow field
-- Quadtree visualizer for 
+- Quadtree visualizer for debugging purposes
 - built in debugging console for easier switching between debug views
 - Basic particle movement using flowfield and unity Rigidbodies
 # Example
