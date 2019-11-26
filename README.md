@@ -3,7 +3,7 @@ What is this project? \
 A Flowfield pathfinding system implemented in unity.
 
 # Goal / Motivation
-This project was made as my programming c exam project during my time at Game College Grenaa, Which is a HTX(High school) education in denmark focused on enginering and game development.
+This project was made as my programming c exam project(Ran from april-may 2018) during my time at Game College Grenaa, Which is a HTX(High school) education in denmark focused on enginering and game development.
 
 The project started out as a dungeon generator focused on placing rooms and then connecting them, After having a basic system of placing rooms and creating doorways between them, I started creating the pathfinding system which then became the main focus.
 
