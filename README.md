@@ -10,7 +10,7 @@ The project started out as a dungeon generator focused on placing rooms and then
 
 # Features:
 - Dungeon generation
-- Connection algorithm that connects rooms until two rooms predefined rooms are connected
+- Connection algorithm that connects rooms until two predefined rooms are connected
 - Flow Field Generation
 - Pathfinding using said Flow Field
 - Quadtree data structure for logarithmic look up in flow field
@@ -19,13 +19,13 @@ The project started out as a dungeon generator focused on placing rooms and then
 - Basic particle movement using flowfield and unity Rigidbodies
 # Example
 FlowField example scene:
-Particles using the flowfield to move level, the current bottleneck of the system is unity slowing down considerably when a big set of rigidbodies trying to move when near eachother.
+Particles using the flowfield to move level, the current bottleneck of the system is unity slowing down considerably when using a big set of rigidbodies.
 ![FlowField](https://github.com/RCDane/Flowfield-pathfinding/blob/master/Images/flowfield%20example.gif)
 Quadtree example scene:
-For this project it was necessary for each particle to find the nearest flowfield point to get it's movement vector. here is the quadtree being visualized, while getting points added to it in a painting like manner.
+For this project it was necessary for each particle to find the nearest flowfield point to get it's movement vector. here is the quadtree being visualized, while points are being added.
 ![FlowField](https://github.com/RCDane/Flowfield-pathfinding/blob/master/Images/quadtree%20example.gif)
 
-Since the programs pathfinding system running time would scale by n\*k using a brute force algorithm for flowfield lookup, where n the amount of particles and k is the size of the flowfield. Since the lookup in a quadtree scales logarithmically as the flowfield gets bigger, the algorithm can go from n\*k to n\*log(k)
+A naive solution would loop through all points in the flowfield, to find the closest point to a particle, the running time of this would be O(n\*k), where n is the amount of particles and k is the size of the flowfield. Since the lookup in a quadtree scales logarithmically as the flowfield gets bigger, the algorithm goes from O(n\*k) to (n\*log(k))
 
 
 Tested in Unity 2018.4.12
